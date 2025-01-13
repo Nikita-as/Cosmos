@@ -6,30 +6,47 @@
 <img width="327" alt="image" src="https://github.com/user-attachments/assets/6a6c2685-cc8f-4a01-b15f-46b7fe754b2b" />
 
 Возможности
+
 Просмотр информации о планетах и солнце
+
 Получение фотографии дня от NASA.
+
 Список астероидов пролеющих рядом с Землей
 
 Стек технологий
+
 Язык программирования - Kotlin
+
 Сетевой слой - Retrofit + Gson
+
 Асинхронность - Kotlin Coroutines
+
 База данных - Room
+
 DI -  Hilt
+
 Архитектура презентационного слоя MVVM + StateFlow
+
 UI - Jetpack Compose
+
 Навигация - Navigation Compose
+
 Unit и UI тесты
+
 Single Activity Application
+
 Многомодульность
 
 REST API
+
 https://api.nasa.gov/
 
 Презентация
+
 https://docs.google.com/presentation/d/1rJMxVJ2QEe2FS6cXNiq_rV57hmQA16DX2QOK93i_ZB0/edit?usp=sharing
 
 Связи между модулями
+
 <img width="895" alt="image" src="https://github.com/user-attachments/assets/8551ea52-5184-47ed-8578-e10657626185" />
 
 
