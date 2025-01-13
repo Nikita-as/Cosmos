@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Космос</string>
+    <string name="planet">Планеты</string>
+    <string name="profile">Профиль</string>
+</resources>
