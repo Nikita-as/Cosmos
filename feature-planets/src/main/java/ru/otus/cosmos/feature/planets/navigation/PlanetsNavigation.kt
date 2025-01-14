@@ -1,5 +1,8 @@
 package ru.otus.cosmos.feature.planets.navigation
 
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
@@ -13,7 +16,10 @@ data object PlanetsRoute
 fun NavController.navigateToPlanet(navOptions: NavOptions) = navigate(PlanetsRoute, navOptions)
 
 fun NavGraphBuilder.planetsScreen() {
-    composable<PlanetsRoute> {
+    composable<PlanetsRoute>(
+        enterTransition = { fadeIn(animationSpec = tween(300)) }, // Анимация входа
+        exitTransition = { fadeOut(animationSpec = tween(300)) }
+    ) {
         PlanetsScreen()
     }
 }

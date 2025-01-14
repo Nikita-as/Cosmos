@@ -1,5 +1,8 @@
 package ru.otus.cosmos.feature.profile.navigation
 
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
@@ -16,7 +19,10 @@ fun NavGraphBuilder.profileScreen(
     onPhotoDayClick: () -> Unit,
     onAsteroidsClick: () -> Unit,
 ) {
-    composable<ProfileRoute> {
+    composable<ProfileRoute>(
+        enterTransition = { fadeIn(animationSpec = tween(300)) }, // Анимация входа
+        exitTransition = { fadeOut(animationSpec = tween(300)) }
+    )  {
         ProfileScreen(onPhotoDayClick = onPhotoDayClick, onAsteroidsClick = onAsteroidsClick)
     }
 }

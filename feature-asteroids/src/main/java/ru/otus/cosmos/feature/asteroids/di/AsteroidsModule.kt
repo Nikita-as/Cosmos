@@ -25,7 +25,7 @@ object AsteroidsModule {
         mapper: AsteroidsMapper,
         dispatcherProvider: DispatcherProvider,
     ): AsteroidsRepository {
-        return if (IS_MOCK) {
+        return if (IS_MOCK.not()) {
             AsteroidsRepositoryImplMock()
         } else {
             AsteroidsRepositoryImpl(api, mapper, dispatcherProvider)
