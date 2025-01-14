@@ -55,5 +55,5 @@ dependencies {
 
     debugImplementation(libs.androidx.ui.test.manifest)
 
-
+    implementation(project(":common-base"))
 }
